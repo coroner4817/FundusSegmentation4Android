@@ -1,0 +1,3 @@
+D:\Senior Design\librarytest2\librarytest2\bin\Debug\librarytest2.dll
+D:\Senior Design\Librarytest1\Librarytest1\bin\Debug\Librarytest1.dll
+D:\Senior Design\3Library\OpencvBinding\bin\Debug\OpencvBinding.dll

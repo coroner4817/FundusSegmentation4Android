@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "librarytest2", "librarytest2\librarytest2.csproj", "{288A403D-75BC-4B7A-8A55-7533377CB1EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpencvBinding", "..\3Library\OpencvBinding\OpencvBinding.csproj", "{2FAEA217-85CA-4AF2-B131-5F98DBD32343}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{288A403D-75BC-4B7A-8A55-7533377CB1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288A403D-75BC-4B7A-8A55-7533377CB1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288A403D-75BC-4B7A-8A55-7533377CB1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288A403D-75BC-4B7A-8A55-7533377CB1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAEA217-85CA-4AF2-B131-5F98DBD32343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAEA217-85CA-4AF2-B131-5F98DBD32343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAEA217-85CA-4AF2-B131-5F98DBD32343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAEA217-85CA-4AF2-B131-5F98DBD32343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = librarytest2\librarytest2.csproj
+	EndGlobalSection
+EndGlobal

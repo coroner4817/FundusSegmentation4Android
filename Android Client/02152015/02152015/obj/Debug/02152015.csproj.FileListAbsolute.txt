@@ -1,0 +1,215 @@
+D:\Senior Design\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\2Project\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\2Project\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\2Project\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\2Project\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\2Project\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\2Project\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\test\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\test\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\test\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\test\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\test\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\test\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\test\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\test\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\test\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\test\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\10AndroidTablet\Project New Draw\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\11DrawTest\Project New Draw\02152015\02152015\obj\Debug\res\drawable\transparent.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\transparent.png
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.dll
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.pdb
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\02152015.dll.mdb
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\x02152015.x02152015.apk
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\bin\Debug\x02152015.x02152015-Signed.apk
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\02152015.dll
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\02152015.pdb
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\android\bin\x02152015.x02152015.apk
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\main.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\strings.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\styles.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\splash.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\demopic.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\buttonuploadpicstyle.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\cameraiconlong.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\icon.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\upload_picture.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\buttonsignstyle.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\filelist.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\row_friend.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\edit_text_style.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\ic_action_search.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\menu\actionbar.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\themes.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\anim\slide_right.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\anim\slide_up.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\layout\dialogcreatfile.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\values\style.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\listviewclickstylewhite.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\listviewclickstylegreen.xml
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\res\drawable\transparent.png
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\R.cs.flag
+D:\Senior Design\2Project\10AndroidTablet\Project New Draw111\02152015\02152015\obj\Debug\uploadflags.txt

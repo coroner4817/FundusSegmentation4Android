@@ -1,0 +1,8 @@
+Application.MainActivity;application.MainActivity
+Application.SplashActivity;application.SplashActivity
+Application.ImageProcessing;application.ImageProcessing
+Application.FriendsAdapter;application.FriendsAdapter
+Application.MyAnimation;application.MyAnimation
+Application.FileListShow;application.FileListShow
+Application.dialogCreate;application.dialogCreate
+Application.PaintView;application.PaintView

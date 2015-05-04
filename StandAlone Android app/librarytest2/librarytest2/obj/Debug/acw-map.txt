@@ -1,0 +1,3 @@
+librarytest2.MainActivity;librarytest2.MainActivity
+librarytest2.FundusSegment;librarytest2.FundusSegment
+Org.Opencv.Android.CameraBridgeViewBase.ICvCameraViewListenerImplementor;mono.org.opencv.android.CameraBridgeViewBase_CvCameraViewListenerImplementor

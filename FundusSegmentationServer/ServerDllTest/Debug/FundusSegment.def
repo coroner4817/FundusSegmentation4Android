@@ -1,0 +1,10 @@
+
+EXPORTS
+
+freeImage @ 1
+segmentImage @ 2
+shutdown @ 3
+startup @ 4
+
+
+

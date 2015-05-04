@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Vessel Segmentation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCreateAccount"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <TextView
+        android:text="From"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCreateAccount"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <TextView
+        android:text="Fundus Images"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCreateAccount"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <TextView
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/textView2" />
+    <ImageView
+        android:src="@drawable/demoPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1" />
+    <TextView
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/textView1" />
+    <Button
+        android:text="Create New File"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/btnCreatFile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:background="@drawable/buttonSignStyle" />
+    <TextView
+        android:text="Or"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textColor="#368DEB"
+        android:id="@+id/txtOr"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <Button
+        android:text="Check File"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/btnCheckFile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:background="@drawable/buttonUploadPicStyle" />
+</LinearLayout>
