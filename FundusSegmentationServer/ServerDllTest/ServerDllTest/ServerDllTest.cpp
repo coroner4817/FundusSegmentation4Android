@@ -424,7 +424,9 @@ int sendImageToClient(int socket, char *ImageForSend, int size){
 
 void* FundusSegmentServer(char* receiveImage, size_t length, int *sendImageSize)
 {
-	std::string directory("d:/");
+	//std::string directory("d:/");
+
+	std::string directory("Data//");
 
 	printf("Start startup func.....\n");
 
