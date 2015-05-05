@@ -109,8 +109,8 @@ namespace Application
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080022
-			public const int LOGtextView = 2131230754;
+			// aapt resource value: 0x7f080021
+			public const int LOGtextView = 2131230753;
 			
 			// aapt resource value: 0x7f080013
 			public const int btnCheckFile = 2131230739;
@@ -130,11 +130,11 @@ namespace Application
 			// aapt resource value: 0x7f08001b
 			public const int btnImageProcess = 2131230747;
 			
-			// aapt resource value: 0x7f080021
-			public const int btnSave = 2131230753;
-			
 			// aapt resource value: 0x7f080020
-			public const int btnVSdismiss = 2131230752;
+			public const int btnSave = 2131230752;
+			
+			// aapt resource value: 0x7f08001d
+			public const int btnVSdismiss = 2131230749;
 			
 			// aapt resource value: 0x7f08000c
 			public const int etSearch = 2131230732;
@@ -154,8 +154,8 @@ namespace Application
 			// aapt resource value: 0x7f08001a
 			public const int paintView2 = 2131230746;
 			
-			// aapt resource value: 0x7f080023
-			public const int search = 2131230755;
+			// aapt resource value: 0x7f080022
+			public const int search = 2131230754;
 			
 			// aapt resource value: 0x7f080010
 			public const int textView1 = 2131230736;
@@ -165,9 +165,6 @@ namespace Application
 			
 			// aapt resource value: 0x7f08001f
 			public const int textViewdp = 2131230751;
-			
-			// aapt resource value: 0x7f08001d
-			public const int textViewp = 2131230749;
 			
 			// aapt resource value: 0x7f080002
 			public const int txtAge = 2131230722;

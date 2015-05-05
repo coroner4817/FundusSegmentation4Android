@@ -12,6 +12,7 @@ using System.Xml.Serialization;
 using System.IO;
 using Android.Content.PM;
 
+
 namespace Application
 {
 	[Activity (Label = "FileListShow",ScreenOrientation = ScreenOrientation.Portrait)]
@@ -91,7 +92,7 @@ namespace Application
 //			mFriends.Add(new Friend { FirstName = "Rubio", LastName = "White", Age = "1", Gender = "Female" });
 //			mFriends.Add(new Friend { FirstName = "Susan", LastName = "Johnson", Age = "14", Gender = "Female" });
 
-			Java.IO.File folder = new Java.IO.File(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/FundusSegmentation");
+			Java.IO.File folder = new Java.IO.File(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/FundusSegmentation/");
 			Boolean success = true;
 			if (!folder.Exists()) {
 				success = folder.Mkdir();
@@ -110,7 +111,9 @@ namespace Application
 					#endregion
 
 
-				} 
+				}
+
+
 			}
 
 
@@ -172,6 +175,8 @@ namespace Application
 
 				mFriends.Remove(t);
 
+				mFriendsTemp = mFriends.ToList ();
+
 				XmlSerializer serializer = new XmlSerializer(typeof(List<Friend>));//initialises the serialiser
 				Stream writer = new FileStream(filepath, FileMode.Create);//initialises the writer
 
@@ -188,6 +193,7 @@ namespace Application
 
 			// Show the alert dialog to the user and wait for response.
 			callDialog.Show();
+
 
 		}
 
@@ -437,7 +443,13 @@ namespace Application
 			mIsAnimating = true;
 			mSearch.Animate ().AlphaBy (-1.0f).SetDuration (300).Start ();
 		}
-
+			
+//		void MediaScanner(Uri _uri)
+//		{
+//			var mediaScanIntent = new Intent(Intent.ActionMediaScannerScanFile);
+//			mediaScanIntent.SetData(_uri);
+//			SendBroadcast(mediaScanIntent);
+//		}
 
 	}
 }

@@ -21,6 +21,8 @@
   </application>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
   <activity android:name=".SplashActivity" android:label="Fundus Segmentation" android:configChanges="orientation" android:screenOrientation="portrait" />
   <activity android:name=".MainActivity" android:label="MainActivity" android:configChanges="orientation" android:screenOrientation="portrait" />
   <activity android:name=".FileListShow" android:label="FileListShow" android:configChanges="orientation" android:screenOrientation="portrait" />

@@ -22,6 +22,9 @@ using System.Threading.Tasks;
 using Android.Content.Res;
 using Java.IO;
 using Android.Content.PM;
+using System.Threading;
+using Android.Text.Format;
+using Java.Util;
 
 namespace Application
 {
@@ -50,11 +53,15 @@ namespace Application
 
 		private Android.Net.Uri uri;
 
+		//private Java.Util.Timer timer = new Java.Util.Timer();
+		//private TimerTask timerTask;
+
 
 		private int socketStatus=0;
 
 		private Bitmap _bitmap;
 		private Bitmap FinalBitmap;
+
 
 		private Button GetVS;
 		private Button _draw;
@@ -64,6 +71,8 @@ namespace Application
 
 		private string msg;
 		private string msgName;
+		//private System.String status;
+
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -95,6 +104,8 @@ namespace Application
 
 			logTextView.SetText ("Client log:\n", TextView.BufferType.Normal);
 
+		
+
 			var myHandler = new Handler ();
 
 			if (Intent.GetStringExtra ("firstname1") != null)
@@ -117,17 +128,6 @@ namespace Application
 			Toast mToast = Toast.MakeText (this, msg, ToastLength.Short);
 			mToast.Show ();
 
-		
-			//Toast.MakeText (this, "Beep Boop", ToastLength.Short).Show ();
-
-//			_paintView2.Click += delegate {
-//
-//				Intent = new Intent ();
-//				Intent.SetType ("image/*");
-//				Intent.SetAction (Intent.ActionGetContent);
-//				StartActivityForResult (Intent.CreateChooser (Intent, "Select Picture"), PickImageId);
-//			};
-
 
 			GetVS.Click += delegate {
 
@@ -135,7 +135,6 @@ namespace Application
 				if(socketStatus==1)
 				{
 
-					//Toast.MakeText(this, "Already got the Vessel Segmentation", ToastLength.Long).Show();
 
 					_paintView2._Bmp=FinalBitmap.Copy(Android.Graphics.Bitmap.Config.Argb8888, true);
 					_paintView2._Bmp=Bitmap.CreateScaledBitmap(_paintView2._Bmp,_paintView2.w,_paintView2.h,false);
@@ -143,15 +142,13 @@ namespace Application
 					_paintView2._Canvas = new Canvas(_paintView2._Bmp);
 					_paintView2.SetImageBitmap (_paintView2._Bmp);
 
-					//GetVS.Clickable=false;
 				}
 
 				else{
 
-					logTextView.Append("Client is running...\n");
-					//Toast.MakeText(this, "Send Image to the server...", ToastLength.Long).Show();
-					mToast.SetText("Send Image to the server...");
-					mToast.Show();
+
+					RunOnUiThread(()=>logTextView.Append("Client is running...\n"));
+
 
 					long tStart = Java.Lang.JavaSystem.CurrentTimeMillis();
 
@@ -175,7 +172,8 @@ namespace Application
 						long tEnd = Java.Lang.JavaSystem.CurrentTimeMillis();
 						long tDelta = tEnd - tStart;
 						double elapsedSeconds = tDelta / 1000.0;
-						logTextView.Text = logTextView.Text +  string.Format ("Total time elpased is: {0} second", elapsedSeconds.ToString ());
+						//RunOnUiThread(()=>logTextView.Text = logTextView.Text +  string.Format ("Total time elpased is: {0} second\n", elapsedSeconds.ToString ()));
+						SetLogTextView( string.Format ("Total time elpased is: {0} second\n", elapsedSeconds.ToString ()));
 					}
 
 				}
@@ -216,13 +214,6 @@ namespace Application
 
 			_Dismiss.Click += delegate {
 
-//				_paintView._Bmp= _bitmap;
-//				_paintView._Bmp= _paintView._Bmp.Copy(Android.Graphics.Bitmap.Config.Argb8888, true);
-//
-//				_paintView._Bmp=Bitmap.CreateScaledBitmap(_paintView._Bmp, _paintView.w, _paintView.h, false);
-//				_paintView._Canvas = new Canvas(_paintView._Bmp);
-//				_paintView.SetImageBitmap (_paintView._Bmp);
-
 				_paintView2.SetImageBitmap(null);
 
 			};
@@ -247,8 +238,7 @@ namespace Application
 			};
 
 		}
-
-				
+	
 
 		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
 		{
@@ -263,13 +253,17 @@ namespace Application
 			}
 
 			if (uri != null) {
-				_paintView._Bmp= Android.Provider.MediaStore.Images.Media.GetBitmap(this.ContentResolver, uri);
+
+
+				_paintView._Bmp = getThumbnailBitmap (GetPathToImage (uri), 500);
+
 				_paintView._Bmp= _paintView._Bmp.Copy(Android.Graphics.Bitmap.Config.Argb8888, true);
 
 				_paintView._Bmp=Bitmap.CreateScaledBitmap(_paintView._Bmp, _paintView.w, _paintView.h, false);
 				_paintView._Canvas = new Canvas(_paintView._Bmp);
 				_paintView.SetImageBitmap (_paintView._Bmp);
 
+				uri.Dispose ();
 
 				_paintView2.SetImageBitmap (null);
 
@@ -318,30 +312,47 @@ namespace Application
 
 				// Connect the socket to the remote endpoint. Catch any errors.
 				try {
-					sock.Connect(ipe);
+
+					//sock.Connect(ipe);
+
+					try
+					{
+						sock.Connect(ipe);
+					}
+					catch (System.Exception ex)
+					{
+						if ((ex is SocketException) && ((SocketException)ex).ErrorCode == 10035) 
+						{
+							// Waiting for connection
+							int time = 0;
+							while (time < 2000) // If it was lower than 1 second
+							{
+								// Do what you want
+								if (sock.Connected) // If connected then break
+									break;
+								System.Threading.Thread.Sleep(50); // Wait 50milisec
+								time += 50;
+							}
+						}
+						else
+						{
+							System.Console.WriteLine("Failed");
+						}
+					}
 
 
+				
 
-					logTextView.Text= logTextView.Text + string.Format("Socket connected to 172.27.27.1\n");
 
+					//RunOnUiThread(()=>logTextView.Text= logTextView.Text + string.Format("Socket connected to {0}\n",sock.RemoteEndPoint.ToString()));
 
-					#region Send Image Name
-					//					byte[] imageName = Encoding.ASCII.GetBytes("T"+"\0");
-					//					int imageNameSend=sock.Send(imageName);
+					SetLogTextView(string.Format("Socket connected to {0}\n",sock.RemoteEndPoint.ToString()));
 
-					#endregion
 
 
 
 					//替换为data from gallery
 					#region read image into byte buffer
-
-
-
-					//Bitmap imageToSend=mBitmap;
-
-					//BitmapFactory.Options options = await GetBitmapOptionsOfImageAsync();
-					//Bitmap imageToSend = await LoadScaledDownBitmapForDisplayAsync (Resources, options, 150, 150);
 
 					if(_bitmap!=null)
 					{
@@ -356,8 +367,8 @@ namespace Application
 						imageBytes.CopyTo(ImageByteForSend, 0);
 						nullByte.CopyTo(ImageByteForSend,imageBytes.Length);
 
-						logTextView.Text= logTextView.Text + string.Format ("Start send image to server\n");
-
+						//logTextView.Text= logTextView.Text + string.Format ("Start send image to server\n");
+						SetLogTextView(string.Format ("Start send image to server\n"));
 
 						#endregion
 
@@ -367,21 +378,16 @@ namespace Application
 						int imageSizeSend=sock.Send(imageSize);
 						#endregion
 
-						//logTextView.Text = logTextView.Text + string.Format ("Send the image size to server\n");
+
 
 						#region receive confirm from server
 						byte[] recvComfirm=new byte[100];
 						int recvConfrimFromServer=sock.Receive(recvComfirm);
 						string status=Encoding.ASCII.GetString(recvComfirm,0,recvConfrimFromServer);
-						//mTextView.Text=status;
 						#endregion
 
-						//logTextView.Text = logTextView.Text + string.Format ("Receive confirm signal from server, start transmit image...\n");
 
 						#region Send Image
-						//一个buffer一个buffer的发
-
-
 
 						int sentByteCount=0;
 						int off=0;
@@ -392,12 +398,12 @@ namespace Application
 							{
 								byte[] bytesPerBufferLong = new byte[10240];
 								Array.Copy(ImageByteForSend,off,bytesPerBufferLong,0,10240);
-								//bytesPerBufferLong=addNullToTheLastOfBytes(bytesPerBufferLong);
+
 
 								sentByteCount=sock.Send(bytesPerBufferLong);
 
 								off+=sentByteCount;
-								//mTextView.SetText((off.ToString() + " bytes has been send"));
+
 								remainSendBufferCount=remainSendBufferCount-sentByteCount;
 
 								System.Console.WriteLine("{0} bytes has been send",off.ToString());
@@ -409,12 +415,11 @@ namespace Application
 							{
 								byte[] bytesPerBufferSmall = new byte[remainSendBufferCount];
 								Array.Copy(ImageByteForSend,off,bytesPerBufferSmall,0,remainSendBufferCount);
-								//bytesPerBufferSmall=addNullToTheLastOfBytes(bytesPerBufferSmall);
+
 
 								sentByteCount=sock.Send(bytesPerBufferSmall);
 
 								off+=sentByteCount;
-								//mTextView.SetText((off.ToString() + " bytes has been send"));
 								remainSendBufferCount=remainSendBufferCount-remainSendBufferCount;
 								System.Console.WriteLine("{0} bytes has been send",off.ToString());
 							}
@@ -423,31 +428,30 @@ namespace Application
 
 						#endregion
 
-						logTextView.Text= logTextView.Text + string.Format ("Successfully send the image to server\n");
+						//RunOnUiThread(()=>logTextView.Text= logTextView.Text + string.Format ("Successfully send the image to server\n"));
 
+						SetLogTextView(string.Format ("Successfully send the image to server\n"));
 					}
+
+					////////////////////////
 
 
 					#region receive confirm from server
 					byte[] opencvstartComfirm=new byte[100];
 					int opencvStartFromServer=sock.Receive(opencvstartComfirm);
 					string opencvStart=Encoding.ASCII.GetString(opencvstartComfirm,0,opencvStartFromServer);
-					logTextView.Text= logTextView.Text+ opencvStart+string.Format("\n");
-
+					//RunOnUiThread(()=>logTextView.Text= logTextView.Text+ opencvStart+string.Format("\n"));
+					SetLogTextView(opencvStart+string.Format("\n"));
 					#endregion
 
 					#region receive confirm from server
 					byte[] opencvFinish=new byte[100];
 					int opencvFinFromServer=sock.Receive(opencvFinish);
 					string opencvfin=Encoding.ASCII.GetString(opencvFinish,0,opencvFinFromServer);
-					logTextView.Text= logTextView.Text + opencvfin+string.Format("\n");
+					//RunOnUiThread(()=>logTextView.Text= logTextView.Text + opencvfin+string.Format("\n"));
+					SetLogTextView(opencvfin+string.Format("\n"));
 					#endregion
 
-					//					//接收图片
-					//					// Receive the response from the remote device.
-					//					int bytesRec = sock.Receive(bytes);
-					//					Console.WriteLine("Echoed test = {0}",
-					//						Encoding.ASCII.GetString(bytes,0,bytesRec));
 
 
 
@@ -486,16 +490,14 @@ namespace Application
 						{
 							Bitmap newRecv=Bitmap.CreateScaledBitmap(recvByte2Bitmap,_bitmap.Width,_bitmap.Height,true);
 
-							//Bitmap mergeBitmap = overlay(_bitmap,newRecv);
-
 							FinalBitmap=newRecv;
 						}
 					
 
 					#endregion
 
-					logTextView.Text=logTextView.Text + string.Format ("Successfully receive the image from server\n");
-
+					//RunOnUiThread(()=>logTextView.Text=logTextView.Text + string.Format ("Successfully receive the image from server\n"));
+					SetLogTextView(string.Format ("Successfully receive the image from server\n"));
 
 					// Release the socket.
 					sock.Shutdown(SocketShutdown.Both);
@@ -506,18 +508,22 @@ namespace Application
 
 				} catch (ArgumentNullException ane) {
 					System.Console.WriteLine("ArgumentNullException : {0}",ane.ToString());
-					logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					//logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					SetLogTextView(string.Format ("Oops! An Error Happened!\n"));
 				} catch (SocketException se) {
 					System.Console.WriteLine("SocketException : {0}",se.ToString());
-					logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					//logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					SetLogTextView(string.Format ("Oops! An Error Happened!\n"));
 				} catch (System.Exception e) {
 					System.Console.WriteLine("Unexpected exception : {0}", e.ToString());
-					logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					//logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+					SetLogTextView(string.Format ("Oops! An Error Happened!\n"));
 				}
 
 			} catch (System.Exception e) {
 				System.Console.WriteLine( e.ToString());
-				logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+				//logTextView.Text= logTextView.Text + string.Format ("Oops! An Error Happened!\n");
+				SetLogTextView(string.Format ("Oops! An Error Happened!\n"));
 			}
 		}
 
@@ -568,11 +574,29 @@ namespace Application
 			return (int)inSampleSize;
 		}
 
+		private Bitmap getThumbnailBitmap(System.String path, int thumbnailSize) {
+			Bitmap bitmap;
+			BitmapFactory.Options bounds = new BitmapFactory.Options();
+			bounds.InJustDecodeBounds = true;
+			BitmapFactory.DecodeFile(path, bounds);
+			if ((bounds.OutWidth == -1) || (bounds.OutHeight == -1)) {
+				bitmap = null;
+			}
+			int originalSize = (bounds.OutHeight > bounds.OutWidth) ? bounds.OutHeight : bounds.OutWidth;
+			BitmapFactory.Options opts = new BitmapFactory.Options();
+			opts.InSampleSize = originalSize / thumbnailSize;
+			bitmap = BitmapFactory.DecodeFile(path, opts);
+			return bitmap;
+		}
+	
 
 		void ExportBitmapAsPNG(Bitmap bitmap)
 		{
+			Time now = new Time();
+			now.SetToNow();
+
 			var sdCardPath = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/FundusSegmentation";
-			var filePath = System.IO.Path.Combine(sdCardPath, msgName+"Edit.jpg");
+			var filePath = System.IO.Path.Combine(sdCardPath, msgName+"EditAt"+now.Year.ToString()+(now.Month+1).ToString()+now.MonthDay.ToString()+now.Hour.ToString()+now.Minute.ToString()+".jpg");
 			var stream = new FileStream(filePath, FileMode.Create);
 			bitmap.Compress(Bitmap.CompressFormat.Jpeg, 100, stream);
 
@@ -584,11 +608,69 @@ namespace Application
 		public override void OnBackPressed ()
 		{
 			base.OnBackPressed(); 
+
+			if (_paintView._Bmp != null) {
+				_paintView._Bmp.Recycle ();
+				_paintView._Bmp = null;
+			}
+
+			if (_paintView2._Bmp != null) {
+				_paintView2._Bmp.Recycle ();
+				_paintView2._Bmp = null;
+			}
+
+			base.OnDestroy ();
+
 			StartActivity(new Intent(this, typeof(MainActivity)));
 			Finish();
 		}
 
 
-	}
-}
+//		public void debugMsg(string msg) 
+//		{
+//			string str = msg;
+//			runOnUiThread(new Runnable() {
+//
+//				public Override void run() {
+//					mInfo.setText(str);
+//				}
+//			});
+//		}
+
+//		public void SetLogTextView(string msg)
+//		{
+//			using (var h = new Handler (Looper.MainLooper))
+//				h.Post (() => {
+//					/* invoked on UI thread */
+//
+//				logTextView.SetText(logTextView.Text+msg,TextView.BufferType.Normal);
+//
+//				});
+//
+//			timerTask = new TimerTask() { 
+//
+//				public override void run() { 
+//					//refresh your textview
+//
+//					logTextView.SetText(logTextView.Text+msg,TextView.BufferType.Normal);
+//				}
+//			};
+//		
+//
+//		}
+
+		private void SetLogTextView (string msg)
+		{
+
+			RunOnUiThread (() => logTextView.Append(msg) );
+
+		}
+
+//		private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
+//		{
+//
+//		}
+
+	}  
+}  
 

@@ -112,5 +112,10 @@ namespace Application
 			Invalidate();
 		}
 
+		~PaintView()
+		{
+
+		}
+
 	}
 }

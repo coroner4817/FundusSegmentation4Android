@@ -28,26 +28,25 @@ public final class R {
         public static final int transparent=0x7f02000a;
     }
     public static final class id {
-        public static final int LOGtextView=0x7f080022;
+        public static final int LOGtextView=0x7f080021;
         public static final int btnCheckFile=0x7f080013;
         public static final int btnCreatFile=0x7f080011;
         public static final int btnCreate=0x7f080005;
         public static final int btnEnableDrawing=0x7f08001c;
         public static final int btnEnableErasing=0x7f08001e;
         public static final int btnImageProcess=0x7f08001b;
-        public static final int btnSave=0x7f080021;
-        public static final int btnVSdismiss=0x7f080020;
+        public static final int btnSave=0x7f080020;
+        public static final int btnVSdismiss=0x7f08001d;
         public static final int etSearch=0x7f08000c;
         public static final int imageView1=0x7f08000f;
         public static final int listView=0x7f08000b;
         public static final int llContainer=0x7f080006;
         public static final int paintView1=0x7f080019;
         public static final int paintView2=0x7f08001a;
-        public static final int search=0x7f080023;
+        public static final int search=0x7f080022;
         public static final int textView1=0x7f080010;
         public static final int textView2=0x7f08000e;
         public static final int textViewdp=0x7f08001f;
-        public static final int textViewp=0x7f08001d;
         public static final int txtAge=0x7f080002;
         public static final int txtCreateAccount=0x7f08000d;
         public static final int txtError=0x7f080004;
