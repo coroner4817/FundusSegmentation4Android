@@ -302,7 +302,7 @@ namespace Application
 
 				#region setup socket
 				Int32 port = 5037;
-				IPAddress ipAddress = IPAddress.Parse("172.27.35.1");
+				IPAddress ipAddress = IPAddress.Parse("192.168.43.226");
 				//IPAddress ipAddress = IPAddress.Parse("192.168.56.1");
 				IPEndPoint ipe = new IPEndPoint(ipAddress, port); 
 

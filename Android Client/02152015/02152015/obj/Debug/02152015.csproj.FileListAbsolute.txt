@@ -246,3 +246,4 @@ D:\Senior Design\2Project\Final Version\Android Client\02152015\02152015\obj\Deb
 D:\Senior Design\2Project\Final Version\Android Client\02152015\02152015\obj\Debug\res\drawable\transparent.png
 D:\Senior Design\2Project\Final Version\Android Client\02152015\02152015\obj\Debug\R.cs.flag
 D:\Senior Design\2Project\Final Version\Android Client\02152015\02152015\obj\Debug\uploadflags.txt
+D:\Senior Design\2Project\Final Version\Android Client\02152015\02152015\obj\Debug\02152015.csprojResolveAssemblyReference.cache

@@ -58,7 +58,7 @@ void main()
 
 	ServerAddr.sin_family = AF_INET;
 	//ServerAddr.sin_addr.S_un.S_addr = htonl(INADDR_ANY);
-	ServerAddr.sin_addr.s_addr = inet_addr("172.27.35.1");
+	ServerAddr.sin_addr.s_addr = inet_addr("172.20.233.1");
 	ServerAddr.sin_port = htons((u_short)PORT);
 	//ServerAddr.sin_port = 0;
 

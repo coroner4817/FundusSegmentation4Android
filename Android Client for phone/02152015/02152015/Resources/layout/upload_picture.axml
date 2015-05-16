@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Vessel Segmentation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#368DEB"
+        android:id="@+id/txtUploadPic"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:id="@+id/txtUploadPicFirstName" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:id="@+id/txtUploadPicLastName" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="50"
+            android:gravity="left"
+            android:id="@+id/txtUploadPicAge" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="50"
+            android:gravity="left"
+            android:id="@+id/txtUploadPicGender" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <Application.PaintView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/paintView1" />
+        <Application.PaintView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/paintView2" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <Button
+            android:text="Get VS"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnImageProcess"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:background="@drawable/buttonSignStyle" />
+        <Button
+            android:text="Draw"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnEnableDrawing"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:background="@drawable/buttonSignStyle" />
+    </LinearLayout>
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/textView1" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <Button
+            android:text="Dismiss VS"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnVSdismiss"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:background="@drawable/buttonUploadPicStyle" />
+        <Button
+            android:text="Erase"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnEnableErasing"
+            android:layout_marginRight="20dp"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:background="@drawable/buttonUploadPicStyle" />
+    </LinearLayout>
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/textViewdp" />
+    <Button
+        android:text="Save Edit VS Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttonSignStyle" />
+</LinearLayout>
