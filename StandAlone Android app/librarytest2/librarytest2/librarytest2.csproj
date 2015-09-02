@@ -75,8 +75,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\3Library\OpencvBinding\OpencvBinding.csproj">
-      <Project>{2FAEA217-85CA-4AF2-B131-5F98DBD32343}</Project>
+    <ProjectReference Include="..\OpencvBinding\OpencvBinding.csproj">
+      <Project>{6775ED3C-27C9-436F-A009-A0CCEB89F7B7}</Project>
       <Name>OpencvBinding</Name>
     </ProjectReference>
   </ItemGroup>

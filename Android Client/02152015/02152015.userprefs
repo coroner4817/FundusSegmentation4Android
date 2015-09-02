@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="02152015\ImageProcessing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="02152015\Friend.cs">
     <Files>
-      <File FileName="02152015\ImageProcessing.cs" Line="58" Column="58" />
+      <File FileName="02152015\ImageProcessing.cs" Line="35" Column="35" />
+      <File FileName="02152015\PaintView.cs" Line="1" Column="1" />
+      <File FileName="02152015\Friend.cs" Line="37" Column="37" />
+      <File FileName="02152015\FileListShow.cs" Line="30" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

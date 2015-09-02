@@ -106,7 +106,7 @@ namespace Application
 
 		
 
-			var myHandler = new Handler ();
+			//var myHandler = new Handler ();
 
 			if (Intent.GetStringExtra ("firstname1") != null)
 			{
